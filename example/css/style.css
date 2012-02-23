@@ -1,0 +1,470 @@
+
+/* ==== Scroll down to find where to put your styles :) ==== */
+
+/*  HTML5 ✰ Boilerplate  */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+input, select { vertical-align: middle; }
+
+body { font:13px/1.231 sans-serif; *font-size:small; } 
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+html { overflow-y: scroll; }
+a:hover, a:active { outline: none; }
+ul, ol { margin-left: 2em; }
+ol { list-style-type: decimal; }
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td { vertical-align: top; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
+textarea { overflow: auto; }
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+body, select, input, textarea {  color: #444; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+a, a:active, a:visited { color: #607890; }
+a:hover { color: #036; }
+
+/*
+    // ========================================== \\
+   ||                                              ||
+   ||              Hoverpanel Styles               ||
+   ||                                              ||
+    \\ ========================================== //
+*/
+
+body{ 
+	background:#447799;
+	font-family: "Courier New", Courier, mono;
+}
+
+.wrapper{
+	width: 980px;
+	margin: 0 auto;
+}
+
+header{
+	margin: 20px 0px 0px;
+	padding: 0 0 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+header .wrapper{
+	position: relative;
+}
+
+header h1{
+	font-size: 5em;
+	color: #98c2e3;
+	text-shadow: 4px 1px 0 #00275f;
+	letter-spacing: 2px;
+	font-variant: small-caps;
+}
+
+header menu{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+header menu li{
+	list-style: none;
+	float: left;
+	margin-left: 10px;
+}
+
+header menu a{
+	display: inline-block;
+	padding: 10px;
+	background: #ccc;
+}
+
+section h2{
+	font-size: 2em;
+	color: #eee;
+	margin-top: 20px;
+}
+
+section p{
+	color: #efefef;
+}
+
+section table{
+	margin: 30px 0px;
+	background: #fff;
+}
+
+section table th{
+	text-align: left;
+	background: #efefef;
+}
+
+section table .header th{
+	padding: 10px;
+	text-align: center;
+	background: #ccc;
+}
+
+section table td,section table th{
+	border: 1px solid #000;
+	padding: 2px 4px;
+}
+
+/* Shared */
+.carousel .carousel_contents ul li.slider_item{
+	float:left;
+}
+
+.carousel p{
+	color: #333;
+}
+
+/* Full Width Carousel */
+#full_width_carousel{
+	margin: 0px;
+}
+
+#full_width_carousel{
+	width:100%;
+	min-height:230px;
+	position: relative;
+}
+
+#full_width_carousel ul{
+	padding:0px;margin:0px;
+}
+
+#full_width_carousel ul li{
+	list-style:none;
+	width:auto;
+	padding: 10px 35px;
+	height:210px;
+	background: url('../images/li_page_bg.png') center top no-repeat;
+}
+
+#full_width_carousel .carousel_contents{
+	overflow:hidden;
+	position:relative;
+	float:left;
+}
+
+#full_width_carousel .carousel_contents ul{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:230px;
+}
+
+#full_width_carousel a.navLeft, #full_width_carousel a.navRight{
+	width:25px;
+	height:230px;
+	background:#6699aa url('../images/white_arrows.png') left center no-repeat;
+	display:block;
+	position: absolute;
+	top: 0px;
+	z-index: 99999;
+}
+
+#full_width_carousel a.navRight{
+	background-position-x: right;
+}
+
+#full_width_carousel a.navRight{
+	right: 0px;
+}
+
+#full_width_carousel .pager{
+	clear:both;
+	position: absolute;
+	bottom: 0px;
+	left: 25px;
+}
+
+#full_width_carousel .pager li{
+	width:auto!important;
+	height:auto!important;
+	float:left;
+}
+
+/* Single Item Carousel */
+#single_case_study{
+	margin: 30px 0px;
+}
+
+#single_case_study{
+	width:500px;
+	min-height:230px;
+	background:#fff;
+	position: relative;
+}
+
+#single_case_study ul{
+	padding:0px;margin:0px;
+}
+
+#single_case_study ul li{
+	list-style:none;
+	width:430px;
+	padding: 10px;
+	height:210px;
+}
+
+#single_case_study .carousel_contents{
+	overflow:hidden;
+	width:450px!important;
+	position:relative;
+	float:left;
+}
+
+#single_case_study .carousel_contents ul{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:230px;
+}
+
+#single_case_study a.navLeft, #single_case_study a.navRight{
+	width:25px;
+	height:230px;
+	background:#6699aa url('../images/white_arrows.png') left center no-repeat;
+	display:block;
+	float:left;
+}
+
+#single_case_study a.navRight{
+	background-position-x: right;
+}
+
+#single_case_study .pager{
+	clear:both;
+	position: absolute;
+	bottom: 0px;
+	left: 25px;
+}
+
+#single_case_study .pager li{
+	width:auto!important;
+	height:auto!important;
+	float:left;
+}
+
+/* Two Item Carousel */
+#two_visible_carousel{
+	margin: 30px 0px;
+}
+
+#two_visible_carousel{
+	width:950px;
+	min-height:230px;
+	background:#fff;
+	position: relative;
+}
+
+#two_visible_carousel ul{
+	padding:0px;margin:0px;
+}
+
+#two_visible_carousel ul li{
+	list-style:none;
+	width:430px;
+	padding: 10px;
+	height:210px;
+}
+
+#two_visible_carousel .carousel_contents{
+	overflow:hidden;
+	width:900px!important;
+	position:relative;
+	float:left;
+}
+
+#two_visible_carousel .carousel_contents ul{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:230px;
+}
+
+#two_visible_carousel a.navLeft, #two_visible_carousel a.navRight{
+	width:25px;
+	height:230px;
+	background:#6699aa url('../images/white_arrows.png') left center no-repeat;
+	display:block;
+	float:left;
+}
+
+#two_visible_carousel a.navRight{
+	background-position-x: right;
+}
+
+#two_visible_carousel .pager{
+	clear:both;
+	position: absolute;
+	bottom: 0px;
+	left: 25px;
+}
+
+#two_visible_carousel .pager li{
+	width:auto!important;
+	height:auto!important;
+	float:left;
+}
+
+
+/* Four Item Carousel */
+#four_visible_carousel{
+	margin: 30px 0px;
+}
+
+#four_visible_carousel{
+	width:950px;
+	min-height:150px;
+	background:#fff;
+	position: relative;
+}
+
+#four_visible_carousel ul{
+	padding:0px;margin:0px;
+}
+
+#four_visible_carousel ul li{
+	list-style:none;
+	width:205px;
+	padding: 10px;
+	height:130px;
+}
+
+#four_visible_carousel .carousel_contents{
+	overflow:hidden;
+	width:900px!important;
+	position:relative;
+	float:left;
+}
+
+#four_visible_carousel .carousel_contents ul{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:150px;
+}
+
+#four_visible_carousel a.navLeft, #four_visible_carousel a.navRight{
+	width:25px;
+	height:150px;
+	background:#6699aa url('../images/white_arrows.png') left center no-repeat;
+	display:block;
+	float:left;
+}
+
+#four_visible_carousel a.navRight{
+	background-position-x: right;
+}
+
+#four_visible_carousel .pager{
+	clear:both;
+	position: absolute;
+	bottom: 0px;
+	left: 25px;
+}
+
+#four_visible_carousel .pager li{
+	width:auto!important;
+	height:auto!important;
+	float:left;
+}
+
+
+
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+@media all and (orientation:portrait) {
+
+}
+
+@media all and (orientation:landscape) {
+
+}
+
+@media screen and (max-device-width: 480px) {
+
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } 
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
