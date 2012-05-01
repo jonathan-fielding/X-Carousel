@@ -104,7 +104,31 @@
     };
     
     var onResize = function() {
-    	
+    	var width = $('body').width();
+   			
+		var carousel_obj = $('.full_width_xcar');
+		
+		var items_in_carousel = carousel_obj.find('ul.carousel_slider li.slider_item').length;
+		$('.full_width_xcar .carousel_contents,.full_width_xcar .carousel ul li,.full_width_xcar, .full_width_xcar .carousel').css('width',width);
+		
+		
+		var padding = parseInt($('.full_width_xcar li.slider_item').css('padding-left').replace('px','')) + parseInt($('.full_width_xcar li.slider_item').css('padding-right').replace('px',''));
+		$('.full_width_xcar li.slider_item').css('width',width - padding);
+		
+		//console.log(parseInt(width),items_in_carousel,parseInt(width) * items_in_carousel)
+		$('.full_width_xcar .carousel_contents .carousel_slider').css('width', parseInt(width) * items_in_carousel);
+		
+		var original_item_count = parseInt(carousel_obj.attr('data-item-count'));
+		
+		var left = (original_item_count + parseInt(carousel_obj.attr('data-item'))) * width;
+		
+		$('.full_width_xcar .carousel_contents .carousel_slider').css('left', 0 - left);
+		
+		carousel_obj.attr('data-item-width', width);
+		carousel_obj.attr('data-slider-width', width * original_item_count);
+		carousel_obj.attr('data-max-neg-wid',(0 - (width*items_in_carousel)) + width);
+		carousel_obj.attr('data-initial-position', - left)
+  
     };
     
     var pager = function(event) {
@@ -264,13 +288,16 @@
 			
 		this_obj.find('.navRight').click(navRight);
 		
-		this_obj.find('.pager').delegate('a','click',function(event){
-			pager(event);
-		});
+		this_obj.find('.pager').delegate('a','click',pager);
 		
 		this_obj.find('.pager').each(function(index) {
 		    $(this).find('li a').eq(0).addClass('active');
 		});
+		
+		if(settings.fullscreen_width === true){
+			$(window).resize(onResize);
+			$(this).addClass('full_width_xcar');
+		}
 		
 		settings.callback_onsetup();
 		

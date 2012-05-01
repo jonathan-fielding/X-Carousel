@@ -6,6 +6,6 @@ $(document).ready(function() {
 
 	$('#four_visible_carousel').xCarousel({'visible_items': 4});
 
-	$('#full_width_carousel').xCarousel({'pager_position':'inside'});
+	$('#full_width_carousel').xCarousel({'pager_position':'inside','fullscreen_width' : true });
 	
 });
